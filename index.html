@@ -1011,85 +1011,26 @@ const MAP_DEFS={
     pSpawn:{px:2,py:10}, bSpawn:{px:42,py:10},
     walls:[
       {px:18,py:2,pw:9,ph:1},
-      {px:20,py:3,pw:1,ph:2},
-      {px:24,py:3,pw:1,ph:2},
-      {px:6,py:4,pw:1,ph:1},
-      {px:38,py:4,pw:1,ph:1},
+      {px:20,py:2,pw:1,ph:2},
+      {px:24,py:2,pw:1,ph:2},
       {px:4,py:5,pw:3,ph:1},
-      {px:12,py:5,pw:1,ph:1},
-      {px:32,py:5,pw:1,ph:1},
-      {px:38,py:5,pw:3,ph:1},
-      {px:6,py:6,pw:1,ph:1},
+      {px:12,py:5.5,pw:1,ph:2},
       {px:9,py:6,pw:4,ph:1},
       {px:32,py:6,pw:4,ph:1},
-      {px:38,py:6,pw:1,ph:1},
-      {px:12,py:7,pw:1,ph:1},
-      {px:32,py:7,pw:1,ph:1},
-      {px:22,py:10,pw:1,ph:1},
-      {px:12,py:13,pw:1,ph:1},
-      {px:32,py:13,pw:1,ph:1},
-      {px:6,py:14,pw:1,ph:1},
+      {px:32,py:5.5,pw:1,ph:2},
+      {px:6,py:14.5,pw:1,ph:2},
       {px:9,py:14,pw:4,ph:1},
       {px:32,py:14,pw:4,ph:1},
-      {px:38,py:14,pw:1,ph:1},
       {px:4,py:15,pw:3,ph:1},
-      {px:12,py:15,pw:1,ph:1},
-      {px:32,py:15,pw:1,ph:1},
       {px:38,py:15,pw:3,ph:1},
-      {px:6,py:16,pw:1,ph:1},
-      {px:20,py:16,pw:1,ph:2},
-      {px:24,py:16,pw:1,ph:2},
-      {px:38,py:16,pw:1,ph:1},
+      {px:20,py:17,pw:1,ph:2},
+      {px:24,py:17,pw:1,ph:2},
       {px:18,py:18,pw:9,ph:1},
+      {px:12,py:13.5,pw:1,ph:2}
     ]
   }
 };
-
-// Fix battlefield walls directly (re-parsed from pixil):
-MAP_DEFS.battlefield.walls=[
-  // Top gate row 2, cols 18-26
-  {px:18,py:2,pw:9,ph:1},
-  // Gate pillars rows 3-4
-  {px:20,py:3,pw:1,ph:2},
-  {px:24,py:3,pw:1,ph:2},
-  // Left outer col 6 rows 4-6 vert
-  {px:6,py:4,pw:1,ph:3},
-  // Left outer row 5 horiz cols 4-6
-  {px:4,py:5,pw:3,ph:1},
-  // Left inner BBBB row 6, cols 8-11
-  {px:8,py:6,pw:4,ph:1},
-  // Left inner col 8 rows 5-7 vert
-  {px:8,py:5,pw:1,ph:3},
-  // Left far col 12, row 7 single
-  {px:12,py:7,pw:1,ph:1},
-  // Right outer col 38 rows 4-6 (mirror of col 6)
-  {px:38,py:4,pw:1,ph:3},
-  // Right outer row 5 horiz cols 38-40
-  {px:38,py:5,pw:3,ph:1},
-  // Right inner BBBB row 6, cols 33-36
-  {px:33,py:6,pw:4,ph:1},
-  // Right inner col 36 rows 5-7
-  {px:36,py:5,pw:1,ph:3},
-  // Right far col 32, row 7 single
-  {px:32,py:7,pw:1,ph:1},
-  // center col 22, row 10 single
-  {px:22,py:10,pw:1,ph:1},
-  // Lower half (mirror rows 4-7 → rows 16-13):
-  {px:6,py:12,pw:1,ph:3},   // mirror of col 6 rows 4-6
-  {px:4,py:15,pw:3,ph:1},
-  {px:8,py:14,pw:4,ph:1},
-  {px:8,py:12,pw:1,ph:3},
-  {px:12,py:13,pw:1,ph:1},
-  {px:38,py:12,pw:1,ph:3},
-  {px:38,py:15,pw:3,ph:1},
-  {px:33,py:14,pw:4,ph:1},
-  {px:36,py:12,pw:1,ph:3},
-  {px:32,py:13,pw:1,ph:1},
-  // Bottom gate row 18 (mirror of row 2)
-  {px:18,py:18,pw:9,ph:1},
-  {px:20,py:15,pw:1,ph:2},
-  {px:24,py:15,pw:1,ph:2},
-];
+// 
 
 // Convert pixil grid coords to arena pixel coords, using thin wall thickness
 function pixToArena(px,py,pw,ph){
